@@ -2,8 +2,8 @@ import React from 'react'
 import TestimonialCard from "@/components/testimonial-card";
 
 const Testimonials = () => {
-  return (<section className={'w-full'}>
-        <div className={'container mx-auto'}>
+  return (<section className={'w-full py-16'}>
+        <div className={'container mx-auto '}>
           <span>Testimonials</span>
           <h2 className={'font-playfair text-5xl mb-2 text-accent'}>What they said about?</h2>
         </div>
