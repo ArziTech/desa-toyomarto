@@ -21,6 +21,7 @@ export type CardProps = {
   src: string;
   title: string;
   // content: React.ReactNode; // change into destination link
+  bookingLink: string;
 };
 
 export const CarouselContext = createContext<{
@@ -148,7 +149,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-export const Card = ({ card }: { card: CardProps }) => {
+export const Card = ({ card, bookingLink }: { card: CardProps, bookingLink: string }) => {
   return (
       <>
         <div
@@ -166,7 +167,7 @@ export const Card = ({ card }: { card: CardProps }) => {
                 asChild
                 variant={'secondary'}
             >
-              <Link href={'https://whatsapp.com/'}>
+              <Link href={bookingLink}>
                   Book Now
               </Link>
             </Button>

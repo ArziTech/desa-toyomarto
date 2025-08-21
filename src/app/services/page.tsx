@@ -9,15 +9,15 @@ import {destinations, natural_tourism, tourists_attraction} from "@/constants/de
 const Page = () => {
 
   const destinations_cards = destinations.map((card) => (
-      <WideCard key={card.src} card={card} />
+      <WideCard key={card.src} card={card} bookingLink={card.bookingLink} />
   ));
 
   const natural_tourism_cards = natural_tourism.map((card) => (
-      <Card key={card.src} card={card} />
+      <Card key={card.src} card={card} bookingLink={card.bookingLink} />
   ));
 
   const tourists_attraction_cards = tourists_attraction.map((card) => (
-      <Card key={card.src} card={card} />
+      <Card key={card.src} card={card} bookingLink={card.bookingLink} />
   ));
 
   return (<div className={'w-full'}>

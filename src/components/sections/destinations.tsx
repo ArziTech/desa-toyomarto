@@ -3,7 +3,7 @@ import {Carousel, Card, CardProps} from "@/components/ui/apple-cards-carousel";
 
 const Destinations = ({data}: {data: CardProps[]}) => {
   const cards = data.map((card) => (
-      <Card key={card.src} card={card} />
+      <Card key={card.src} card={card} bookingLink={card.bookingLink} />
   ));
 
   return (

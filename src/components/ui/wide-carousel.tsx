@@ -148,7 +148,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-export const Card = ({ card }: { card: CardProps }) => {
+export const Card = ({ card, bookingLink }: { card: CardProps, bookingLink: string }) => {
   return (
       <>
         <div
@@ -162,10 +162,11 @@ export const Card = ({ card }: { card: CardProps }) => {
               {card.title}
             </p>
             <Button
-                className={'z-40  w-full border border-white'}
+                className={'z-40 w-full '}
                 asChild
+                variant={'secondary'}
             >
-              <Link href={'https://whatsapp.com/'}>
+              <Link href={bookingLink}>
                 Book Now
               </Link>
             </Button>

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import logoColor from '../../../public/logo_desa_color.svg'
 import arzilogo from '../../../public/arzi-logo.svg'
 import Link from "next/link";
+import * as links from '@/constants/important_links'
 
 const Footer = () => {
   return (
@@ -19,20 +20,20 @@ const Footer = () => {
           </div>
           <Image src={logoColor} alt={'Logo Desa Wisata Toyomart'} />
           <div className="flex gap-2">
-            <Link href={'https://instagram.com/'}>
+            <Link href={links.instagram}>
               <Instagram />
             </Link>
-            <Link href={'https://facebook.com/'}>
+            <Link href={links.facebook}>
               <Facebook />
             </Link>
-            <Link href={'https://youtube.com/'}>
+            <Link href={links.youtube}>
               <Youtube />
             </Link>
           </div>
           <div className={'w-full border-t-1 border-black h-px'} />
           <div className={'text-center'}>
 
-            <Link href={'https://arzi.vercel.app'}
+            <Link href={links.developer}
                   className={'flex items-center justify-center'}>
               <Image src={arzilogo} alt={'developed by arzi'} width={48}
                      height={48}/><span>developer info </span>
