@@ -152,7 +152,7 @@ export const Card = ({ card }: { card: CardProps }) => {
   return (
       <>
         <div
-            className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+            className="relative z-10 flex h-[20rem] w-[40rem] flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100  dark:bg-neutral-900"
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
           <div className="relative h-full w-full flex flex-col justify-between z-40 p-8">
@@ -166,7 +166,7 @@ export const Card = ({ card }: { card: CardProps }) => {
                 asChild
             >
               <Link href={'https://whatsapp.com/'}>
-                  Book Now
+                Book Now
               </Link>
             </Button>
           </div>
