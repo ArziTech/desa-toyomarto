@@ -16,12 +16,11 @@ const Blognarticles = ({isButtonShow = true}:{isButtonShow? :boolean}) => {
           <h2 className={'font-playfair text-5xl mb-2 text-accent'}>Popular
             Blog & Articles</h2>
         </div>
-        <div className={'container mx-auto flex gap-6'}>
-
-          <div className={'w-1/2'}>
+        <div className={'container mx-auto flex flex-col lg:flex-row gap-6'}>
+          <div className={'w-full lg:w-1/2'}>
             {/*  left side*/}
             <Image src={candi1} alt={'image 1'}
-                   className={'w-full mb-4 rounded-3xl'} width={550}
+                   className={'w-full mb-4'} width={550}
                    height={370}/>
             <div className="space-y-4">
 
@@ -36,7 +35,7 @@ const Blognarticles = ({isButtonShow = true}:{isButtonShow? :boolean}) => {
             </div>
 
           </div>
-          <div className={'w-1/2 flex flex-col gap-6'}>
+          <div className={'w-full lg:w-1/2 flex flex-col gap-6'}>
             {/*  right side*/}
             <SmallArticle
                 title={'Menelusuri Pesona Wisata Desa Toyomarto: Keindahan Alam dan\n' + '                  Budaya yang Memikat'}
@@ -52,7 +51,7 @@ const Blognarticles = ({isButtonShow = true}:{isButtonShow? :boolean}) => {
                  img={article5} slug={'article-5'}/>
             {
               isButtonShow &&
-              <Button className={'mt-auto rounded-xl'}>
+              <Button className={'mt-auto '}>
                 <Link href={'/articles'}>See more articles</Link>
               </Button>
             }
@@ -72,10 +71,10 @@ interface SmallArticleProps {
 const SmallArticle = ({img, title, slug}: SmallArticleProps) => {
   return (<div className={'flex gap-4'}>
         <Image src={img} alt={'gambar article 2'}
-               className={'size-32 object-cover rounded-2xl'}/>
+               className={'size-32 object-cover '}/>
       <div className={'flex flex-col justify-between'}>
         <h3 className={'font-bold text-xl'}>{title}</h3>
-        <Button className={'w-fit ms-auto rounded-xl'}
+        <Button className={'w-fit ms-auto'}
                 asChild>
           <Link href={`/articles/${slug}`} >Baca Selengkapnya</Link>
         </Button>

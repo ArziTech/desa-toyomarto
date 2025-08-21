@@ -120,7 +120,7 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
                         },
                       }}
                       key={"card" + index}
-                      className="rounded-3xl last:pr-[5%] md:last:pr-[33%]"
+                      className=" last:pr-[5%] md:last:pr-[33%]"
                   >
                     {item}
                   </motion.div>
@@ -129,14 +129,14 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
           </div>
           <div className="mr-10 flex justify-end gap-2">
             <button
-                className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+                className="relative z-40 flex h-10 w-10 items-center justify-center bg-gray-100 disabled:opacity-50"
                 onClick={scrollLeft}
                 disabled={!canScrollLeft}
             >
               <ArrowLeft className="h-6 w-6 text-gray-500" />
             </button>
             <button
-                className="relative z-40 flex h-10 w-10 items-center justify-center rounded-full bg-gray-100 disabled:opacity-50"
+                className="relative z-40 flex h-10 w-10 items-center justify-center bg-gray-100 disabled:opacity-50"
                 onClick={scrollRight}
                 disabled={!canScrollRight}
             >
@@ -152,7 +152,7 @@ export const Card = ({ card }: { card: CardProps }) => {
   return (
       <>
         <div
-            className="relative z-10 flex h-[20rem] w-[40rem] flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100  dark:bg-neutral-900"
+            className="relative z-10 flex h-[20rem] w-[40rem] flex-col items-start justify-start overflow-hidden  bg-gray-100  dark:bg-neutral-900"
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
           <div className="relative h-full w-full flex flex-col justify-between z-40 p-8">
@@ -162,7 +162,7 @@ export const Card = ({ card }: { card: CardProps }) => {
               {card.title}
             </p>
             <Button
-                className={'z-40 rounded-xl w-full border border-white'}
+                className={'z-40  w-full border border-white'}
                 asChild
             >
               <Link href={'https://whatsapp.com/'}>

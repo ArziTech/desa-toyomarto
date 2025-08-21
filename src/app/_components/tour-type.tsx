@@ -8,7 +8,7 @@ const TourType = () => {
           <span>Tour Types</span>
           <h2 className={'font-playfair text-5xl mb-2 text-accent'}>Adventure & Acitivities</h2>
           <p className={'lg:w-9/12'}>Jelajahi destinasi mendebarkan yang akan membuat jantung Anda berdebar. Dari pegunungan yang terjal hingga hutan lebat, mulailah perjalanan tak terlupakan yang akan menguji batasan Anda dan menciptakan kenangan abadi. Selami yang tidak dikenal, taklukkan tantangan alam, dan tulis kisah epik petualangan Anda sendiri.</p>
-          <div className={'mt-16 flex justify-center gap-8'}>
+          <div className={'mt-16 flex flex-wrap justify-center gap-8'}>
             <div className={'flex  items-center' +
                 ' flex-col text-center'}>
               <Mountain className={'size-24'} />

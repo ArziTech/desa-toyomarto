@@ -14,9 +14,10 @@ const Hero = ({image, title, subtitle} : Props) => {
         <Image
             src={image}
             className={'w-full -z-10 object-cover absolute'}
+            fill
             alt={'hero background image'}
         />
-        <div className={'relative container mx-auto h-full text-white text-right flex flex-col justify-center'}>
+        <div className={'relative container mx-auto h-full text-white text-center md:text-right px-4 flex flex-col justify-center'}>
 
         <h1 className={'text-7xl mb-4 font-playfair relative '}>{title}</h1>
         <p className={'text-xl max-w-3xl ms-auto'}>{subtitle}</p>

@@ -71,12 +71,12 @@ const MoreArticle = ({title, slug,preview, img}:MoreArticleProps) => {
   return (
     <Card className={'w-full'}>
       <CardContent className={'flex gap-4 w-full'}>
-        <Image className={'rounded-xl'} src={img}
+        <Image  src={img}
                alt={`Gambari dari artikel ${title}`}/>
         <div className={'flex flex-col  w-full justify-between'}>
           <h3 className={'font-playfair text-xl mb-2 font-medium'}>{title}</h3>
           <p className={'text-justify'}>{preview}</p>
-          <Button asChild className={'ms-auto mt-auto rounded-xl'}>
+          <Button asChild className={'ms-auto mt-auto '}>
             <Link href={`/articles/${slug}`}>Baca
               Selengkapnya</Link>
           </Button>

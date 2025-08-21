@@ -35,15 +35,15 @@ const Page = () => {
             tidak, Marta = Mati) diartikan sebagai Ari Kehidupan.</p>
         </div>
         <Image src={profile} alt={'Gambar Desa Toyomarto'}
-               className={'w-1/2 object-cover rounded-2xl'}/>
+               className={'w-1/2 object-cover'}/>
       </div>
       <div className={'container mx-auto py-16 flex gap-8'}>
-        <div className="w-1/2 rounded-xl">
+        <div className="w-1/2 ">
           <h2 className={'font-sans font-bold text-5xl'}>Kondisi <span
               className={'text-primary'}>Geografis</span></h2>
           <div className={'border-t-2 border-primary w-1/2 my-2'}/>
           <Image src={map_profile} alt={'Gambar Peta Desa Toyomarto'}
-                 className={'w-full object-cover rounded-2xl'}/>
+                 className={'w-full object-cover'}/>
         </div>
         <div className={'flex flex-col gap-6  w-1/2'}>
           <p className={'text-xl text-justify'}>Desa Toyomarto yang terletak di Kecamatan

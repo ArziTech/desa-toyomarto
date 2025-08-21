@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Roboto } from "next/font/google";
 import "./globals.css";
-import Navbar from "@/components/global/navbar";
 import Footer from "@/components/global/footer";
+import {Navbar} from "@/components/global/navbar";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -29,6 +29,7 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${roboto.variable} antialiased`}
       >
+        {/*<Navbar />*/}
         <Navbar />
         {children}
         <Footer />
