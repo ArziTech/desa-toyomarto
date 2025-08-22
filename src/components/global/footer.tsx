@@ -10,8 +10,8 @@ const Footer = () => {
   return (
       <footer className={'w-full bg-[#F5F5F5]'}>
         <div className={'container flex flex-col gap-2 items-center mx-auto py-8'}>
-          <div className={'flex flex-col md:flex-row item-center' +
-              ' justify-center text-center gap-4 text-xl'}>
+          <div className={'flex flex-col text-lg sm:flex-row item-center' +
+              ' justify-center text-center gap-4 sm:text-xl'}>
             <Link href={'/'}>Home</Link>
             <Link href={'/profile'}>Profile</Link>
             <Link href={'/services'}>Services</Link>

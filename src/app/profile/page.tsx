@@ -18,12 +18,17 @@ const Page = () => {
     {/* MAIN CONTENT */}
 
     <section className={'w-full'}>
-      <div className={'container mx-auto py-16 flex gap-8'}>
-        <div className={'flex flex-col gap-2 w-1/2'}>
-          <h2 className={'font-sans font-bold text-5xl'}>Profil <span
-              className={'text-primary'}>Desa Toyomarto</span></h2>
+      <div className="container pt-16">
+        <h2 className={'font-sans font-bold text-5xl'}>Profil <span
+            className={'text-primary'}>Desa Toyomarto</span></h2>
           <div className={'border-t-2 border-primary w-1/2 my-2'}/>
-          <p className={'text-xl text-justify'}>Desa Wisata Toyomarto adalah
+
+      </div>
+      <div className={'container mx-auto pb-16 flex flex-col lg:flex-row' +
+          ' gap-8'}>
+        <div className={'flex flex-col gap-2 lg:w-1/2'}>
+          <p className={'text-xl text-justify indent-8'}><span className={'text-xl' +
+              'italic text-3xl font-bold text-primary'}><i>Desa Wisata Toyomarto</i></span> adalah
             sebuah desa yang terletak di
             Kecamatan Singosari, Kabupaten Malang, Jawa Timur. Desa ini
             berada di kawasan dataran tinggi dengan pemandangan yang indah
@@ -35,18 +40,22 @@ const Page = () => {
             tidak, Marta = Mati) diartikan sebagai Ari Kehidupan.</p>
         </div>
         <Image src={profile} alt={'Gambar Desa Toyomarto'}
-               className={'w-1/2 object-cover'}/>
+               className={'lg:w-1/2 object-cover w-full max-lg:order-first'}/>
       </div>
-      <div className={'container mx-auto py-16 flex gap-8'}>
-        <div className="w-1/2 ">
+      <div className="container pt-16">
           <h2 className={'font-sans font-bold text-5xl'}>Kondisi <span
               className={'text-primary'}>Geografis</span></h2>
+      </div>
+      <div className={'container mx-auto pb-16 flex flex-col lg:flex-row' +
+          ' gap-8'}>
+        <div className="lg:w-1/2 ">
           <div className={'border-t-2 border-primary w-1/2 my-2'}/>
           <Image src={map_profile} alt={'Gambar Peta Desa Toyomarto'}
                  className={'w-full object-cover'}/>
         </div>
-        <div className={'flex flex-col gap-6  w-1/2'}>
-          <p className={'text-xl text-justify'}>Desa Toyomarto yang terletak di Kecamatan
+        <div className={'flex flex-col gap-6  lg:w-1/2 indent-8'}>
+          <p className={'text-xl text-justify'}><span className={'text-xl' +
+              'italic text-3xl font-bold text-primary'}><i>Desa Toyomarto</i></span> yang terletak di Kecamatan
             Singosari, Kabupaten Malang, secara geografis berada di dataran
             tinggi. Ketinggiannya berkisar antara 400 hingga 700 meter di atas
             permukaan laut. Keadaan ini membuat desa Toyomarto memiliki iklim

@@ -201,6 +201,10 @@ body {
   }
 }
 
+.container {
+  @apply max-2xl:px-4 mx-auto;
+}
+
 /*.container {*/
 /*  @apply border border-blue-900;*/
 /*}*/

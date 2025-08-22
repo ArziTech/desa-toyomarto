@@ -8,7 +8,7 @@ const Testimonials = () => {
           <h2 className={'font-playfair text-5xl mb-2 text-accent'}>What they said about?</h2>
         </div>
         <div className={'container mx-auto py-16'}>
-          <div className="grid grid-cols-2 gap-4 gap-y-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 gap-y-16">
             <TestimonialCard/>
             <TestimonialCard/>
             <TestimonialCard/>

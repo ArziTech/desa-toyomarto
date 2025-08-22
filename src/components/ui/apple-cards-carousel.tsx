@@ -153,10 +153,11 @@ export const Card = ({ card, bookingLink }: { card: CardProps, bookingLink: stri
   return (
       <>
         <div
-            className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden bg-gray-100 md:h-[40rem] md:w-96 dark:bg-neutral-900"
+            className="relative z-10 flex  w-56 aspect-3/4 md:w-64 lg:w-72 xl:w-80 flex-col items-start justify-start overflow-hidden bg-gray-100  dark:bg-neutral-900"
         >
-          <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
-          <div className="relative h-full w-full flex flex-col justify-between z-40 p-8">
+          {/*<div className="absolute bg-black z-10 inset-0" />*/}
+          <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/90 via-transparent to-transparent" />
+          <div className="relative h-full w-full flex flex-col justify-between z-40 p-8 lg:p-12">
             <p
                 className="mt-2 max-w-xs text-left font-playfair text-xl font-semibold [text-wrap:balance] text-white md:text-3xl"
             >
@@ -178,7 +179,7 @@ export const Card = ({ card, bookingLink }: { card: CardProps, bookingLink: stri
               // fill
               width={368}
               height={640}
-              className="absolute size-full inset-0 z-10 object-cover"
+              className="absolute size-full inset-0 object-cover"
           />
         </div>
       </>

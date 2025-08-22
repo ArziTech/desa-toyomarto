@@ -1,6 +1,9 @@
-import { Menu} from "lucide-react";
+'use client'
+
+import {Menu} from "lucide-react";
 import Image from 'next/image'
 import logo from '../../../public/logo_desa_white.svg'
+import logoColor from '../../../public/logo_desa_color.svg'
 
 import {
   Accordion,
@@ -25,6 +28,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
+import {cn} from "@/lib/utils";
+import {usePathname} from "next/navigation";
 
 interface MenuItem {
   title: string;
@@ -48,36 +53,6 @@ interface NavbarProps {
 const Navbar = ({
                    menu = [
                      { title: "Home", url: "/" },
-                     // {
-                     //   title: "Resources",
-                     //   url: "#",
-                     //   items: [
-                     //     {
-                     //       title: "Help Center",
-                     //       description: "Get all the answers you need right here",
-                     //       icon: <Zap className="size-5 shrink-0" />,
-                     //       url: "#",
-                     //     },
-                     //     {
-                     //       title: "Contact Us",
-                     //       description: "We are here to help you with any questions you have",
-                     //       icon: <Sunset className="size-5 shrink-0" />,
-                     //       url: "#",
-                     //     },
-                     //     {
-                     //       title: "Status",
-                     //       description: "Check the current status of our services and APIs",
-                     //       icon: <Trees className="size-5 shrink-0" />,
-                     //       url: "#",
-                     //     },
-                     //     {
-                     //       title: "Terms of Service",
-                     //       description: "Our terms and conditions for using our services",
-                     //       icon: <Book className="size-5 shrink-0" />,
-                     //       url: "#",
-                     //     },
-                     //   ],
-                     // },
                      {
                        title: "Profile",
                        url: "/profile",
@@ -94,8 +69,25 @@ const Navbar = ({
                        title: "About",
                        url: "/about",
                      },
+                     // {
+                     //   title: "Language",
+                     //   url: "#",
+                     //   items: [
+                     //     {
+                     //       title: "Bahasa Indonesia",
+                     //       icon: <span className="size-5 shrink-0" >en</span>,
+                     //       url: "#",
+                     //     },
+                     //     {
+                     //       title: "English",
+                     //       icon: <span className="size-5 shrink-0">🇮🇩</span>,
+                     //       url: "#",
+                     //     },
+                     //   ],
+                     // },
                    ],
                  }: NavbarProps) => {
+  const pathname = usePathname();
   return (
       <section className="z-50 py-4 fixed w-full bg-black/40 backdrop-blur">
         <div className="container mx-auto">
@@ -114,7 +106,7 @@ const Navbar = ({
             <div className="flex items-center">
               <NavigationMenu>
                 <NavigationMenuList>
-                  {menu.map((item) => renderMenuItem(item))}
+                  {menu.map((item) => renderMenuItem(item, pathname))}
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
@@ -133,8 +125,8 @@ const Navbar = ({
               </Link>
               <Sheet>
                 <SheetTrigger asChild>
-                  <Button variant="outline" size="icon">
-                    <Menu className="size-4" />
+                  <Button variant="outline" size="icon" className={'bg-white/0 border-0'}>
+                    <Menu className="size-6 text-white"  />
                   </Button>
                 </SheetTrigger>
                 <SheetContent className="overflow-y-auto">
@@ -142,7 +134,7 @@ const Navbar = ({
                     <SheetTitle>
                       <Link href={'/'} className="flex items-center gap-2">
                         <Image
-                            src={logo}
+                            src={logoColor}
                             className="max-h-16 dark:invert"
                             alt={'logo desa wisata toyomarto'}
                         />
@@ -155,7 +147,7 @@ const Navbar = ({
                         collapsible
                         className="flex w-full flex-col gap-4"
                     >
-                      {menu.map((item) => renderMobileMenuItem(item))}
+                      {menu.map((item) => renderMobileMenuItem(item, pathname))}
                     </Accordion>
                   </div>
                 </SheetContent>
@@ -167,7 +159,7 @@ const Navbar = ({
   );
 };
 
-const renderMenuItem = (item: MenuItem) => {
+const renderMenuItem = (item: MenuItem, currentPath: string) => {
   if (item.items) {
     return (
         <NavigationMenuItem key={item.title}>
@@ -187,7 +179,10 @@ const renderMenuItem = (item: MenuItem) => {
       <NavigationMenuItem key={item.title}>
         <NavigationMenuLink
             href={item.url}
-            className="bg-background/0 text-white hover:bg-accent hover:text-accent-foreground group inline-flex h-10 w-max items-center justify-center rounded-md px-4 py-2 text-sm font-medium transition-colors"
+            className={cn("bg-background/0 text-white hover:bg-accent" +
+                " hover:text-accent-foreground group inline-flex h-10 w-max" +
+                " items-center justify-center rounded-md px-4 py-2" +
+                " text-sm font-medium transition-colors", item.url === currentPath && 'text-accent hover:text-white' )}
         >
           {item.title}
         </NavigationMenuLink>
@@ -195,11 +190,12 @@ const renderMenuItem = (item: MenuItem) => {
   );
 };
 
-const renderMobileMenuItem = (item: MenuItem) => {
+const renderMobileMenuItem = (item: MenuItem, currentPath:string) => {
   if (item.items) {
     return (
         <AccordionItem key={item.title} value={item.title} className="border-b-0">
-          <AccordionTrigger className="text-md py-0 font-semibold hover:no-underline">
+          <AccordionTrigger className={"text-md py-0 font-semibold" +
+              " hover:no-underline"}>
             {item.title}
           </AccordionTrigger>
           <AccordionContent className="mt-2">
@@ -212,7 +208,8 @@ const renderMobileMenuItem = (item: MenuItem) => {
   }
 
   return (
-      <a key={item.title} href={item.url} className="text-md font-semibold">
+      <a key={item.title} href={item.url} className={cn("text-md" +
+          " font-semibold", item.url === currentPath && 'text-accent')}>
         {item.title}
       </a>
   );

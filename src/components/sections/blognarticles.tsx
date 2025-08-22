@@ -24,14 +24,16 @@ const Blognarticles = ({isButtonShow = true}:{isButtonShow? :boolean}) => {
                    height={370}/>
             <div className="space-y-4">
 
-              <h3 className={'font-bold  text-3xl'}>Tak Hanya Unik Ini Dia
+              <h3 className={'font-bold text-2xl md:text-3xl'}>Tak Hanya Unik Ini Dia
                 Fakta-Fakta Tentang Candi Singosari</h3>
-              <p className={'text-xl'}>Temukan keindahan Candi Singosari, sebuah
+              <p className={'text-lg md:text-xl'}>Temukan keindahan Candi Singosari, sebuah
                 situs bersejarah yang terletak di Jawa Timur, Indonesia. Candi
                 kuno ini, yang dibangun pada abad ke-13, adalah bukti kemegahan
                 Kerajaan Singosari.</p>
-              <Link href={'/articles/article-1'} className={'text-xl font-medium text-primary'}>Read
-                Full Article</Link>
+              <Button asChild className={''}>
+                <Link href={'/articles/article-1'}>Read
+                  Full Article</Link>
+              </Button>
             </div>
 
           </div>
@@ -73,7 +75,7 @@ const SmallArticle = ({img, title, slug}: SmallArticleProps) => {
         <Image src={img} alt={'gambar article 2'}
                className={'size-32 object-cover '}/>
       <div className={'flex flex-col justify-between'}>
-        <h3 className={'font-bold text-xl'}>{title}</h3>
+        <h3 className={'font-medium md:font-bold text-lg md:text-xl'}>{title}</h3>
         <Button className={'w-fit ms-auto'}
                 asChild>
           <Link href={`/articles/${slug}`} >Baca Selengkapnya</Link>

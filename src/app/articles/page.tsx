@@ -25,6 +25,7 @@ const Page = () => {
 
         <section className={'w-full my-16'}>
           <div className={'container mx-auto mb-8'}>
+            <h3 className={'text-accent font-playfair text-3xl mb-4'}>Artikel Lainnya...</h3>
             <div className={'w-full flex flex-col gap-4'}>
               <MoreArticle
                   title={'3 Alasan Kenapa Kamu Harus  Liburan ke Bukit Kuneer'}
@@ -72,10 +73,11 @@ const MoreArticle = ({title, slug,preview, img}:MoreArticleProps) => {
     <Card className={'w-full'}>
       <CardContent className={'flex gap-4 w-full'}>
         <Image  src={img}
+                className={'object-cover'}
                alt={`Gambari dari artikel ${title}`}/>
         <div className={'flex flex-col  w-full justify-between'}>
           <h3 className={'font-playfair text-xl mb-2 font-medium'}>{title}</h3>
-          <p className={'text-justify'}>{preview}</p>
+          <p className={'text-justify line-clamp-3 mb-2'}>{preview}</p>
           <Button asChild className={'ms-auto mt-auto '}>
             <Link href={`/articles/${slug}`}>Baca
               Selengkapnya</Link>
