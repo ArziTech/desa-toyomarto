@@ -30,6 +30,7 @@ import {
 import Link from "next/link";
 import {cn} from "@/lib/utils";
 import {usePathname} from "next/navigation";
+import LanguageSelector from "@/components/global/language-selector";
 
 interface MenuItem {
   title: string;
@@ -107,6 +108,9 @@ const Navbar = ({
               <NavigationMenu>
                 <NavigationMenuList>
                   {menu.map((item) => renderMenuItem(item, pathname))}
+                  <NavigationMenuItem>
+                    <LanguageSelector />
+                  </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
             </div>

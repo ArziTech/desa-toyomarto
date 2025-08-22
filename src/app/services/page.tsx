@@ -21,8 +21,8 @@ const Page = () => {
   ));
 
   return (<div className={'w-full'}>
-    <Hero title={'Desa Wisata Toyomarto'}
-          subtitle={'Berbagai keindahan potensi wisata didalamnya. Mulai dari wisata alam, buatan, dan budaya. Maksimalkan liburan anda bersama kami.'}
+    <Hero title={''}
+          subtitle={''}
           image={bgHero}/>
     <section className={'w-full'}>
       <div className={'container mx-auto py-16'}>

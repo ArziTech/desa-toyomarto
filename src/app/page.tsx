@@ -10,8 +10,8 @@ export default function Home() {
   return (
    <div className={'w-full'}>
      <Hero
-         title={'Desa Wisata Toyomarto'}
-         subtitle={'Berbagai keindahan potensi wisata didalamnya. Mulai dari wisata alam, buatan, dan budaya. Maksimalkan liburan anda bersama kami.'}
+         title={''}
+         subtitle={''}
          image={bgHero}
      />
      <TourType />
