@@ -1,5 +1,7 @@
 import React from 'react'
-import {Facebook, Instagram, Youtube} from "lucide-react";
+import {
+  Instagram, MessageCircle,
+} from "lucide-react";
 import Image from 'next/image'
 import logoColor from '../../../public/logo_desa_color.svg'
 import arzilogo from '../../../public/arzi-logo.svg'
@@ -19,15 +21,27 @@ const Footer = () => {
             <Link href={'/about'}>About</Link>
           </div>
           <Image src={logoColor} alt={'Logo Desa Wisata Toyomart'} />
-          <div className="flex gap-2">
-            <Link href={links.instagram}>
+          <div className="flex gap-2 flex-col sm:flex-row">
+            <Link href={links.instagram} className={'flex ' +
+                ' justify-center  items-center gap-2'}>
               <Instagram />
+              <span>
+                @dewi.amarta_toyomarto
+              </span>
             </Link>
-            <Link href={links.facebook}>
-              <Facebook />
+            <Link href={links.instagram2} className={'flex ' +
+                ' justify-center  items-center gap-2'}>
+              <Instagram/>
+              <span>
+                @jelajahisingosari
+              </span>
             </Link>
-            <Link href={links.youtube}>
-              <Youtube />
+            <Link href={links.whatsapp} className={'flex ' +
+                ' justify-center  items-center gap-2'}>
+              <MessageCircle />
+              <span>
+                0822 3368 4102
+              </span>
             </Link>
           </div>
           <div className={'w-full border-t-1 border-black h-px'} />

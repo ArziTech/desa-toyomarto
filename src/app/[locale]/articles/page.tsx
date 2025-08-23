@@ -1,18 +1,16 @@
 import React from 'react'
 import Hero from "@/components/sections/hero";
-import bgHero from "../../../public/hero_image_background.png";
+import bgHero from "@/public/hero_image_background.png";
 import Blognarticles from "@/components/sections/blognarticles";
-import Destinations from "@/components/sections/destinations";
-import {destinations} from "@/constants/destinations";
 import {Card, CardContent} from "@/components/ui/card";
 import Image, {StaticImageData} from 'next/image'
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
 
-import article6 from "../../../public/articles/article6.png";
-import article7 from "../../../public/articles/article7.png";
-import article8 from "../../../public/articles/article8.png";
-import article9 from "../../../public/articles/article9.png";
+import article6 from "@/public/articles/article6.png";
+import article7 from "@/public/articles/article7.png";
+import article8 from "@/public/articles/article8.png";
+import article9 from "@/public/articles/article9.png";
 
 const Page = () => {
   return (<div className={'w-full'}>
@@ -54,9 +52,6 @@ const Page = () => {
             </div>
           </div>
         </section>
-
-        {/**/}
-        <Destinations data={destinations}/>
       </div>)
 }
 export default Page

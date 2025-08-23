@@ -1,10 +1,8 @@
 import React from 'react'
 import Hero from "@/components/sections/hero";
-import bgHero from "../../../../public/hero_candi_background.png";
 import Image from "next/image";
-import sumberawan from "../../../../public/about_candi_sumberawan.png";
-import Destinations from "@/components/sections/destinations";
-import {destinations} from "@/constants/destinations";
+import bgHero from "@/public/hero_candi_background.png";
+import sumberawan from "@/public/about_candi_sumberawan.png";
 
 const Page = () => {
   return (<div className={'w-full'}>
@@ -93,7 +91,6 @@ const Page = () => {
             terhadap kekayaan budaya dan tradisi yang masih berlangsung hingga
             hari ini.</p>
         </div>
-        <Destinations data={destinations}/>
       </div>)
 }
 export default Page

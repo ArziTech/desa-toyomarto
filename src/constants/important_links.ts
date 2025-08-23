@@ -1,13 +1,11 @@
-const instagram = 'https://instagram.com/';
-const facebook = 'https://facebook.com/';
-const youtube = 'https://youtube.com/';
+const instagram = 'https://www.instagram.com/dewi.amerta_toyomarto/';
+const instagram2 = 'https://www.instagram.com/jelajahisingosari';
 const whatsapp = 'https://whatsapp.com/';
 const developer = 'https://arzi.vercel.app';
 
 export {
   instagram,
-  facebook,
-  youtube,
+  instagram2,
   whatsapp,
   developer
 }

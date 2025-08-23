@@ -1,26 +1,27 @@
 "use client";
 import React, {
-  useEffect, useState, createContext, JSX,
+  useEffect, useState, createContext, JSX, useContext, useRef, useCallback,
 } from "react";
 import {
-  ArrowLeft,
-  ArrowRight,
+  ArrowLeft, ArrowRight, XIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
-import {  motion } from "motion/react";
+import {AnimatePresence, motion} from "motion/react";
 import Image from "next/image";
 import {Button} from "@/components/ui/button";
 import Link from "next/link";
+import {useOutsideClick} from "@/components/ui/use-outside-click";
 
 interface CarouselProps {
   items: JSX.Element[];
   initialScroll?: number;
 }
 
-export type CardProps = {
+export type WideCardProps = {
   src: string;
   title: string;
-  // content: React.ReactNode; // change into destination link
+  content: React.ReactNode; // change into destination link
+  bookingLink: string;
 };
 
 export const CarouselContext = createContext<{
@@ -148,10 +149,95 @@ export const Carousel = ({ items, initialScroll = 0 }: CarouselProps) => {
   );
 };
 
-export const Card = ({ card, bookingLink }: { card: CardProps, bookingLink: string }) => {
+export const Card = ({ card, bookingLink, index, layout = false }: { card: WideCardProps,index: number, bookingLink: string, layout?: boolean }) => {
+  const [open, setOpen] = useState(false);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { onCardClose } = useContext(CarouselContext);
+
+  const handleOpen = () => {
+    setOpen(true);
+  };
+
+  const handleClose = useCallback(() => {
+    setOpen(false);
+    onCardClose(index);
+  },[index, onCardClose]);
+
+  useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") {
+        handleClose();
+      }
+    }
+
+    if (open) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [handleClose, open]);
+
+  // @ts-expect-error this is okay
+  useOutsideClick(containerRef, () => handleClose());
+
+
   return (
       <>
-        <div
+        <AnimatePresence>
+          {open && (
+              <div className="fixed inset-0 z-50 h-screen overflow-auto">
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    className="fixed inset-0 h-full w-full bg-black/80 backdrop-blur-lg"
+                />
+                <motion.div
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit={{ opacity: 0 }}
+                    ref={containerRef}
+                    layoutId={layout ? `card-${card.title}` : undefined}
+                    className="relative z-[60] mx-auto package-card-height my-10 max-w-5xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900  flex flex-col"
+                >
+
+                  <div className="w-full relative flex justify-between">
+
+                  <motion.h3
+                      layoutId={layout ? `title-${card.title}` : undefined}
+                      className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white border-b border-accent/80 pb-3 w-fit"
+                  >
+                    {card.title}
+                  </motion.h3>
+                  <Button
+                      variant={'destructive'}
+                      className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center  "
+                      onClick={handleClose}
+                  >
+                    <XIcon className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                  </Button>
+                  </div>
+
+                  <div className="pt-4 pb-10 flex-grow">{card.content}</div>
+                  <Button
+                      className={'z-40 w-full '}
+                      asChild
+                      variant={'secondary'}
+                  >
+                    <Link href={bookingLink}>
+                      Book Now
+                    </Link>
+                  </Button>
+                </motion.div>
+              </div>
+          )}
+        </AnimatePresence>
+        <motion.button
+            layoutId={layout ? `card-${card.title}` : undefined}
+            onClick={handleOpen}
             className="relative z-10 flex h-[20rem] w-[40rem] flex-col items-start justify-start overflow-hidden  bg-gray-100  dark:bg-neutral-900"
         >
           <div className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/50 via-transparent to-transparent" />
@@ -179,7 +265,7 @@ export const Card = ({ card, bookingLink }: { card: CardProps, bookingLink: stri
               height={640}
               className="absolute size-full inset-0 z-10 object-cover"
           />
-        </div>
+        </motion.button>
       </>
   );
 };

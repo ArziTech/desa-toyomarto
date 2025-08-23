@@ -1,20 +1,20 @@
 import React from 'react'
 
-const Explore1 = () => {
+const Explore3 = () => {
   return (<section className={'w-full min-h-full'}>
     <div className={'container'}>
       <div className="font-serif">
         <div className={'pb-1'}>
-          <p className={'text-accent text-3xl font-semibold'}>566 k / pax <span className={'text-base text-black'}>min
+          <p className={'text-accent text-3xl font-semibold'}>738 k / pax <span className={'text-base text-black'}>min
             6 pax</span></p>
         </div>
         <div className="flex gap-8">
           <div className={'w-full'}>
             <p className={'text-xl font-medium'}>Destinasi Wisata</p>
             <ol className={'list-inside font-serif  list-disc'}>
-              <li>Mandiri Park</li>
-              <li>Wonosari</li>
-              <li>Batik Sekar Kamulyan</li>
+              <li>Budug Asu</li>
+              <li>Bukit Kuneer</li>
+              <li>Arjuna Geo Park</li>
             </ol>
           </div>
           <div className={'w-full'}>
@@ -34,4 +34,4 @@ const Explore1 = () => {
     </div>
   </section>)
 }
-export default Explore1
+export default Explore3

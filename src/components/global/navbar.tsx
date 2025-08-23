@@ -28,7 +28,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import Link from "next/link";
-import {cn} from "@/lib/utils";
+import {checkCurrentPathname, cn} from "@/lib/utils";
 import {usePathname} from "next/navigation";
 import LanguageSelector from "@/components/global/language-selector";
 
@@ -48,7 +48,6 @@ interface NavbarProps {
     title: string;
   };
   menu?: MenuItem[];
-
 }
 
 const Navbar = ({
@@ -152,6 +151,8 @@ const Navbar = ({
                         className="flex w-full flex-col gap-4"
                     >
                       {menu.map((item) => renderMobileMenuItem(item, pathname))}
+                      <LanguageSelector className={'text-black border' +
+                          ' border-border w-full'} />
                     </Accordion>
                   </div>
                 </SheetContent>
@@ -186,7 +187,7 @@ const renderMenuItem = (item: MenuItem, currentPath: string) => {
             className={cn("bg-background/0 text-white hover:bg-accent" +
                 " hover:text-accent-foreground group inline-flex h-10 w-max" +
                 " items-center justify-center rounded-md px-4 py-2" +
-                " text-sm font-medium transition-colors", item.url === currentPath && 'text-accent hover:text-white' )}
+                " text-sm font-medium transition-colors",  checkCurrentPathname(item.url, currentPath) && 'text-accent hover:text-white' )}
         >
           {item.title}
         </NavigationMenuLink>
@@ -213,7 +214,7 @@ const renderMobileMenuItem = (item: MenuItem, currentPath:string) => {
 
   return (
       <a key={item.title} href={item.url} className={cn("text-md" +
-          " font-semibold", item.url === currentPath && 'text-accent')}>
+          " font-semibold", checkCurrentPathname(item.url, currentPath) && 'text-accent')}>
         {item.title}
       </a>
   );
