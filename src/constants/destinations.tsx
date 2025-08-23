@@ -36,7 +36,7 @@ export const destinations: CardProps[] = [
 export const natural_tourism: CardProps[] = [
   {
     title: "Kebun Teh",
-    src: "/destinations/stupa_sumberawan.png",
+    src: "/destinations/tea_farm.png",
     // content: <DummyContent />,
     bookingLink: links.whatsapp
   },
@@ -49,7 +49,7 @@ export const natural_tourism: CardProps[] = [
   },
   {
     title: "Camp Ground",
-    src: "/destinations/anggrek.png",
+    src: "/destinations/camp_ground.png",
     // content: <DummyContent />,
     bookingLink: links.whatsapp
   },
@@ -64,14 +64,14 @@ export const natural_tourism: CardProps[] = [
 export const tourists_attraction: CardProps[] = [
   {
     title: "Arjuna Geopark",
-    src: "/destinations/stupa_sumberawan.png",
+    src: "/destinations/arjuna_geopark.png",
     // content: <DummyContent />,
     bookingLink: links.whatsapp
   },
 
   {
     title: "Candi Singosari",
-    src: "/destinations/bukit_kuneer.png",
+    src: "/destinations/candi_singosari.png",
     // content: <DummyContent />,
     bookingLink: links.whatsapp
   },
@@ -83,7 +83,7 @@ export const tourists_attraction: CardProps[] = [
   },
   {
     title: "Candi Sumberawan",
-    src: "/destinations/budug_asu.png",
+    src: "/destinations/candi_sumberawan.png",
     // content: <DummyContent />,
     bookingLink: links.whatsapp
   },

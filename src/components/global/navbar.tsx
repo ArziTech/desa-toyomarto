@@ -2,8 +2,8 @@
 
 import {Menu} from "lucide-react";
 import Image from 'next/image'
-import logo from '../../../public/logo_desa_white.svg'
-import logoColor from '../../../public/logo_desa_color.svg'
+import logo from '@/public/logo_desa_white.svg'
+import logoColor from '@/public/logo_desa_color.svg'
 
 import {
   Accordion,
@@ -89,7 +89,7 @@ const Navbar = ({
                  }: NavbarProps) => {
   const pathname = usePathname();
   return (
-      <section className="z-50 py-4 fixed w-full bg-black/40 backdrop-blur">
+      <section className="z-50  fixed w-full bg-primary/75 backdrop-blur">
         <div className="container mx-auto">
           {/* Desktop Menu */}
           <nav className="hidden justify-between lg:flex">

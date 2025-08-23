@@ -29,8 +29,8 @@ const LanguageSelector = ({className}:{className?:string}) => {
   return (
       <Select defaultValue={locale} value={locale} onValueChange={handleLocaleChange}>
         <SelectTrigger className={cn("text-white", className)}>
-          <Globe className={'text-black md:text-white '} />
-          <SelectValue placeholder="Select a fruit" className={'md:text-white' +
+          <Globe className={'text-black lg:text-white '} />
+          <SelectValue placeholder="Select a fruit" className={'lg:text-white' +
               ' text-black'} />
         </SelectTrigger>
         <SelectContent>

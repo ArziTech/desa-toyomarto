@@ -13,7 +13,7 @@ const Hero = ({image, title, subtitle} : Props) => {
       <div className={'relative w-full h-fit  overflow-hidden'}>
         <Image
             src={image}
-            className={'-z-10 mt-24 lg:mt-0 mx-auto object-cover relative'}
+            className={'-z-10 mt-16 lg:mt-0 mx-auto object-cover relative'}
             alt={'hero background image'}
         />
         <div className={' container mx-auto absolute inset-0' +

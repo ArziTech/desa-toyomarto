@@ -3,8 +3,8 @@ import {
   Instagram, MessageCircle,
 } from "lucide-react";
 import Image from 'next/image'
-import logoColor from '../../../public/logo_desa_color.svg'
-import arzilogo from '../../../public/arzi-logo.svg'
+import logoColor from '@/public/logo_desa_color.svg'
+import arzilogo from '@/public/arzi-logo.svg'
 import Link from "next/link";
 import * as links from '@/constants/important_links'
 
@@ -33,7 +33,7 @@ const Footer = () => {
                 ' justify-center  items-center gap-2'}>
               <Instagram/>
               <span>
-                @jelajahisingosari
+                @desawisatatoyomarto
               </span>
             </Link>
             <Link href={links.whatsapp} className={'flex ' +
@@ -46,7 +46,6 @@ const Footer = () => {
           </div>
           <div className={'w-full border-t-1 border-black h-px'} />
           <div className={'text-center'}>
-
             <Link href={links.developer}
                   className={'flex items-center justify-center'}>
               <Image src={arzilogo} alt={'developed by arzi'} width={48}
