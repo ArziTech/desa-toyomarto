@@ -3,6 +3,68 @@
     "title": "Hello world!"
   },
   "About": {
-    "subtitle": "More than just a beautiful temple, it is a window of knowledge into Indonesia's ancient history and culture."
+    "subtitle": "Historical and Cultural Heritage at the Foot of Mount Arjuno",
+    "history_1": "Sumberawan Temple is an important cultural and historical heritage site in Indonesia. Located in Toyomarto Village, Singosari District, Malang Regency, East Java, this temple offers more than just the beauty of its structure; it also provides us with a window into ancient Indonesian history and culture. Sumberawan Temple is a Buddhist temple located in Toyomarto Village, Singosari District, Malang Regency, East Java, Indonesia. Although information about its origins and construction history is not fully known, the temple is generally believed to have been built in the 14th century AD. There are several theories about who was responsible for its construction; one is that the temple may be related to the Singhasari Kingdom, which ruled from the 13th to the 14th century, or perhaps to the Majapahit Kingdom, which succeeded Singhasari and lasted until the late 15th century.",
+    "history_2": "Sumberawan Temple is unique due to its location on a highland, near the foot of Mount Arjuno. The calm atmosphere and beautiful natural scenery make it a special place. One of the interesting characteristics of Sumberawan Temple is the presence of a spring nearby, which may be the reason why the temple was named 'Sumberawan' (from the word 'sumber' meaning spring). The water from this spring is considered sacred by the local community and is often used in various religious ceremonies and rituals. The temple's structure is made of andesite stone and includes several architectural elements typical of Buddhist temples, including a stupa and a Buddha statue. Unfortunately, due to damage and destruction over time, some of the original elements of the temple have been lost or damaged. However, that does not diminish the importance of this site as part of Indonesia's historical and cultural heritage.",
+    "history_3": "Over the centuries, Sumberawan Temple has undergone various stages of restoration and renovation. These preservation efforts are important to ensure that future generations can also enjoy and learn from this historical site. Although not as popular as major temples like Borobudur or Prambanan, Sumberawan Temple attracts the attention of historians, archaeologists, and tourists who wish to understand more deeply the ancient civilizations and cultures in Indonesia. To this day, Sumberawan Temple remains a historical and religious tourist destination. Visitors often feel a mystical and spiritual sensation when they visit here, which may be part of the temple's special charm. For this reason, Sumberawan Temple is not only important as an archaeological site but also as a center for religious and spiritual activities that remain alive and dynamic. It can also increase appreciation for the rich culture and traditions that continue to this day."
+  },
+  "Profile": {
+    "profile": {
+      "title": "Profile",
+      "desaName": "Toyomarto Village",
+      "description_1": "Toyomarto Tourism Village is a village located in the Singosari District, Malang Regency, East Java. This village is situated in a high-altitude area with beautiful scenery and cool air, as it is not far from the slopes of Mount Arjuno. The rural atmosphere in this village is still very pristine, with expansive rice fields, gardens, and trees dominating its landscape. Toyomarto is derived from the Javanese words 'Toyo' and 'Marto'. 'Toyo' means water, and 'Marto' or 'Amarta' (A = not, Marta = dead) is interpreted as the Water of Life.",
+      "description_1_highlight": "Toyomarto Tourism Village"
+    },
+    "geography": {
+      "title": "Geographical",
+      "subtitle": "Conditions",
+      "description_1": "Toyomarto Village, located in the Singosari District, Malang Regency, is geographically situated in a highland area. Its altitude ranges from 400 to 700 meters above sea level. This condition gives Toyomarto Village a cool climate, with a comfortable average annual temperature.",
+      "description_1_highlight": "Toyomarto Village",
+      "description_2": "Topographically, the village consists of hills, valleys, and slopes. The presence of small rivers and natural springs also complements the natural landscape of Toyomarto Village, serving as a source of irrigation for the surrounding agricultural lands. Most of the village area consists of rice fields, gardens, and farms. This geographical condition also influences the main livelihood of its residents, who are predominantly farmers and livestock breeders.",
+      "description_3": "Located on the tourist route to Mount Arjuno, this village has a strategic position. Its proximity to Singosari Temple makes it an additional attraction for tourists. Therefore, in addition to agriculture, the tourism potential is also being developed by the people of Toyomarto."
+    }
+  },
+  "Services": {
+    "naturalTourism": {
+      "sectionTag": "Where to go?",
+      "title": "Natural Tourism",
+      "description": "Explore our curated selection of sights in this diverse list of must-visit places. We've gathered the best destinations to awaken your sense of adventure."
+    },
+    "touristAttractions": {
+      "sectionTag": "Where to go?",
+      "title": "Tourist Attractions",
+      "description": "Explore our curated selection of sights in this diverse list of must-visit places. We've gathered the best destinations to awaken your sense of adventure."
+    }
+  },
+  "PackageList": {
+    "sectionTag": "Where to go?",
+    "title": "Travel Packages",
+    "description": "Explore our curated selection of sights in this diverse list of must-visit places. We've gathered the best destinations to awaken your sense of adventure."
+  },
+  "TourType": {
+    "sectionTitle": "Tour Types",
+    "mainTitle": "Adventure & Activities",
+    "description": "Explore thrilling destinations that will get your heart racing. From rugged mountains to dense forests, embark on an unforgettable journey that will test your limits and create lasting memories. Dive into the unknown, conquer nature's challenges, and write your own epic story of adventure.",
+    "camping": {
+      "title": "Camping",
+      "description": "Enjoy the great outdoors, have an unforgettable adventure, and create beautiful memories"
+    },
+    "trekking": {
+      "title": "Trekking",
+      "description": "Stunning views, hidden paths, remote villages, the beauty of nature"
+    },
+    "campfire": {
+      "title": "Campfire",
+      "description": "The fun and warmth of a campfire in the midst of nature, creating an unforgettable experience"
+    },
+    "culture": {
+      "title": "Culture",
+      "description": "Enjoy the great outdoors, have an unforgettable adventure, and create beautiful memories"
+    }
+  },
+  "Destinations": {
+    "sectionTag": "Where to go?",
+    "title": "Popular Destinations",
+    "description": "Explore our curated selection of sights in this diverse list of must-visit places. We've gathered the best destinations to awaken your sense of adventure."
   }
 }

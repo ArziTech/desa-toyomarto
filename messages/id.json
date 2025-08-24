@@ -3,6 +3,68 @@
     "title": "Hello world!"
   },
   "About": {
-    "subtitle": "Lebih dari sekadar keindahan candi, jendela pengetahuan  menuju sejarah dan kebudayaan kuno Indonesia."
+    "subtitle": "Warisan Sejarah dan Budaya di Kaki Gunung Arjuno",
+    "history_1": "Candi Sumberawan merupakan salah satu warisan budaya dan sejarah yang penting di Indonesia. Terletak di Desa Toyomarto, Kecamatan Singosari, Kabupaten Malang, Jawa Timur, candi ini menawarkan lebih dari sekadar keindahan candinya, ia juga memberi kita jendela pengetahuan menuju sejarah dan kebudayaan kuno Indonesia. Candi Sumberawan merupakan salah satu candi Buddha yang terletak di Desa Toyomarto, Kecamatan Singosari, Kabupaten Malang, Jawa Timur, Indonesia. Meskipun informasi mengenai asal-usul dan sejarah pembangunannya belum sepenuhnya diketahui, candi ini umumnya diperkirakan dibangun pada abad ke-14 Masehi. Ada beberapa teori mengenai siapa yang bertanggung jawab atas pembangunan Candi Sumberawan salah satunya adalah bahwa candi ini mungkin berhubungan dengan Kerajaan Singhasari, yang berkuasa dari abad ke-13 hingga ke-14, atau mungkin juga dengan Kerajaan Majapahit, yang menggantikan Singhasari dan berlangsung hingga akhir abad ke-15.",
+    "history_2": "Candi Sumberawan unik karena lokasinya yang berada di dataran tinggi, dekat dengan kaki Gunung Arjuno. Suasana yang tenang dan pemandangan alam yang indah membuatnya menjadi tempat yang istimewa. Salah satu karakteristik yang menarik dari Candi Sumberawan adalah keberadaan sebuah sumber mata air di dekatnya, yang mungkin menjadi alasan mengapa candi ini diberi nama 'Sumberawan'. Air dari mata air ini dianggap keramat oleh masyarakat setempat dan sering digunakan dalam berbagai upacara keagamaan dan ritual. Struktur candi ini terbuat dari batu andesit dan mencakup beberapa elemen arsitektural khas candi Buddha, termasuk stupa dan patung Buddha. Sayangnya, karena kerusakan dan perusakan sepanjang waktu, sejumlah elemen asli candi telah hilang atau rusak. Namun, itu tidak mengurangi pentingnya situs ini sebagai bagian dari warisan sejarah dan kebudayaan Indonesia.",
+    "history_3": "Selama berabad-abad, Candi Sumberawan mengalami berbagai tahap restorasi dan renovasi. Upaya pelestarian ini penting untuk memastikan bahwa generasi mendatang juga dapat menikmati dan belajar dari situs sejarah ini. Meskipun belum sepopuler candi-candi besar seperti Borobudur atau Prambanan, Candi Sumberawan menarik perhatian para ahli sejarah, arkeolog, dan wisatawan yang berkeinginan memahami lebih dalam mengenai peradaban dan kebudayaan kuno di Indonesia. Hingga saat ini, Candi Sumberawan tetap menjadi tujuan wisata sejarah dan keagamaan. Pengunjung sering merasakan sensasi mistis dan spiritual saat berkunjung ke sini, yang mungkin memang merupakan bagian dari daya tarik khusus candi ini. Karena alasan inilah, Candi Sumberawan tidak hanya penting sebagai situs arkeologi, tetapi juga sebagai pusat kegiatan keagamaan dan spiritual yang tetap hidup dan dinamis. Juga bisa menambah apresiasi terhadap kekayaan budaya dan tradisi yang masih berlangsung hingga hari ini."
+  },
+  "Profile": {
+    "profile": {
+      "title": "Profil",
+      "desaName": "Desa Toyomarto",
+      "description_1": "Desa Wisata Toyomarto adalah sebuah desa yang terletak di Kecamatan Singosari, Kabupaten Malang, Jawa Timur. Desa ini berada di kawasan dataran tinggi dengan pemandangan yang indah serta udara yang sejuk, karena lokasinya yang tidak jauh dari lereng Gunung Arjuno. Suasana pedesaan di desa ini masih sangat asri, dengan hamparan sawah, kebun, dan pepohonan yang mendominasi lanskapnya. Toyomarto diambil dari kata Toyo dan Marto dalam bahasa Jawa Toyo berarti Air dan Marto/Amarta (A = tidak, Marta = Mati) diartikan sebagai Air Kehidupan.",
+      "description_1_highlight": "Desa Wisata Toyomarto"
+    },
+    "geography": {
+      "title": "Kondisi",
+      "subtitle": "Geografis",
+      "description_1": "Desa Toyomarto yang terletak di Kecamatan Singosari, Kabupaten Malang, secara geografis berada di dataran tinggi. Ketinggiannya berkisar antara 400 hingga 700 meter di atas permukaan laut. Keadaan ini membuat desa Toyomarto memiliki iklim yang sejuk, dengan suhu rata-rata tahunan yang nyaman.",
+      "description_1_highlight": "Desa Toyomarto",
+      "description_2": "Secara topografi, desa ini terdiri dari perbukitan, lembah, dan lereng-lereng. Keberadaan sungai-sungai kecil dan mata air alami juga melengkapi bentang alam desa Toyomarto, yang berfungsi sebagai sumber irigasi bagi lahan-lahan pertanian di sekitarnya. Sebagian besar wilayah desa ini berupa persawahan, kebun, dan ladang. Kondisi geografis ini juga memengaruhi mata pencarian utama penduduknya yang mayoritas adalah petani dan peternak.",
+      "description_3": "Terletak di jalur wisata menuju Gunung Arjuno, desa ini memiliki posisi strategis. Lokasinya yang berdekatan dengan Candi Singosari menjadikannya daya tarik tambahan bagi wisatawan. Oleh karena itu, selain pertanian, potensi wisata juga dikembangkan oleh masyarakat Toyomarto."
+    }
+  },
+  "Services": {
+    "naturalTourism": {
+      "sectionTag": "Mau ke mana?",
+      "title": "Wisata Alam",
+      "description": "Jelajahi pilihan kami yang telah disusun dari tempat-tempat wisata dalam daftar beragam tempat yang wajib dikunjungi ini. Kami telah mengumpulkan destinasi terbaik untuk membangkitkan semangat petualangan Anda."
+    },
+    "touristAttractions": {
+      "sectionTag": "Mau ke mana?",
+      "title": "Atraksi Wisata",
+      "description": "Jelajahi pilihan kami yang telah disusun dari tempat-tempat wisata dalam daftar beragam tempat yang wajib dikunjungi ini. Kami telah mengumpulkan destinasi terbaik untuk membangkitkan semangat petualangan Anda."
+    }
+  },
+  "PackageList": {
+    "sectionTag": "Mau ke mana?",
+    "title": "Paket Wisata",
+    "description": "Jelajahi pilihan kami yang telah disusun dari tempat-tempat wisata dalam daftar beragam tempat yang wajib dikunjungi ini. Kami telah mengumpulkan destinasi terbaik untuk membangkitkan semangat petualangan Anda."
+  },
+  "TourType": {
+    "sectionTitle": "Jenis Tur",
+    "mainTitle": "Petualangan & Aktivitas",
+    "description": "Jelajahi destinasi mendebarkan yang akan membuat jantung Anda berdebar. Dari pegunungan yang terjal hingga hutan lebat, mulailah perjalanan tak terlupakan yang akan menguji batasan Anda dan menciptakan kenangan abadi. Selami yang tidak dikenal, taklukkan tantangan alam, dan tulis kisah epik petualangan Anda sendiri.",
+    "camping": {
+      "title": "Camping",
+      "description": "Nikmati alam bebas, rasakan petualangan tak terlupakan, dan buat kenangan indah"
+    },
+    "trekking": {
+      "title": "Trekking",
+      "description": "Pemandangan yang menakjubkan, jalur tersembunyi, desa terpencil, keindahan alam"
+    },
+    "campfire": {
+      "title": "Campfire",
+      "description": "Keseruan dan kehangatan api unggun di tengah alam yang membuat pengalaman tidak terlupakan"
+    },
+    "culture": {
+      "title": "Budaya",
+      "description": "Nikmati alam bebas, rasakan petualangan tak terlupakan, dan buat kenangan indah"
+    }
+  },
+  "Destinations": {
+    "sectionTag": "Mau ke mana?",
+    "title": "Destinasi Populer",
+    "description": "Jelajahi pilihan kami yang telah disusun dari tempat-tempat wisata dalam daftar beragam tempat yang wajib dikunjungi ini. Kami telah mengumpulkan destinasi terbaik untuk membangkitkan semangat petualangan Anda."
   }
 }
